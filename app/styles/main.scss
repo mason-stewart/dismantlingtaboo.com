@@ -2,14 +2,14 @@ $background: rgb(255, 253, 252);
 $light-text: rgb(112, 110, 110);
 $red-text: rgb(232, 54, 1);
 
-// $open-sans: 'Open Sans', sans-serif;
-$open-sans: 'Helvetica', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+// $open-sans: 'Helvetica', sans-serif;
 
 
 
 body {
     background: $background;
-    font-family: $open-sans;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
     margin: 0;
 }
@@ -69,12 +69,14 @@ header {
 
     .about-natalee {
         color: $light-text;
-        line-height: 25px;
-        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 23px;
+        font-weight: 400;
     }
 
     .divider {
-        margin: 0 auto 68px;
+        margin: 0 auto 70px;
         display: block;
     }
 
@@ -95,13 +97,20 @@ header {
     }
 
     .quote {
+        width: 588px;
         color: $light-text;
-        line-height: 24px;
+        font-style: italic;
+        line-height: 22px;
         margin-bottom: 10px;
     }
 
-    h5, .praise {
+    .quoted, .praise {
         margin-bottom: 45px;
+    }
+
+    .quoted {
+        font-weight: 400;
+        font-size: 15px;
     }
 }
 
@@ -133,14 +142,16 @@ header {
 
         p {
             width: inherit;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .download {
             color: $red-text;
+            padding: 9px 18px 10px;
+            font-size: 14px;
+            font-weight: 600;
             text-transform: uppercase;
             display: inline-block;
-            padding: 8px 18px;
             border-radius: 4px;
             background: $background;
         }
