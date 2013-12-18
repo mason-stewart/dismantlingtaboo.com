@@ -1,0 +1,162 @@
+$background: rgb(255, 253, 252);
+$light-text: rgb(112, 110, 110);
+$red-text: rgb(232, 54, 1);
+
+// $open-sans: 'Open Sans', sans-serif;
+$open-sans: 'Helvetica', sans-serif;
+
+
+
+body {
+    background: $background;
+    font-family: $open-sans;
+    color: #333;
+    margin: 0;
+}
+
+* {
+    text-align: center;
+}
+
+p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    // font-family: Adelle;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+header {
+    height: 500px;
+    background: url('/images/pattern.gif'), repeat;
+    border-bottom: 2px solid #000;
+    // font-family: Adelle;
+
+    .book-title {
+        display: block;
+        padding: 40px 0 35px;
+        margin: 0 auto;
+    }
+
+    .summary {
+        width: 640px;
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            margin: 0 0 12px;
+        }
+    }
+
+    .natalee {
+        display: block;
+        margin: 20px auto 0;
+    }
+}
+
+.wrapper {
+    padding-top: 95px;
+    background: $background;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .about-natalee {
+        color: $light-text;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+
+    .divider {
+        margin: 0 auto 68px;
+        display: block;
+    }
+
+    .middle {
+        height: 290px;
+        background: url('/images/pattern.gif'), repeat;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+
+
+    h4 {
+        margin-bottom: 0px;
+    }
+    
+    .stars {
+        margin-bottom: 12px;
+    }
+
+    .quote {
+        color: $light-text;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    h5, .praise {
+        margin-bottom: 45px;
+    }
+}
+
+.middle-content {
+    width: 775px;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+
+    * {
+        text-align: left;
+    }
+
+    .book {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .download-content {
+        width: 450px;
+        margin-left: 320px;
+
+        h2 {
+            font-size: 24px;
+            margin-top: 45px;
+        }
+
+        p {
+            width: inherit;
+            margin-bottom: 20px;
+        }
+
+        .download {
+            color: $red-text;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 4px;
+            background: $background;
+        }
+    }
+}
+
+footer {
+    height: 58px;
+    margin-top: 95px;
+    border-top: 2px solid #000;
+    line-height: 58px;
+    background: url('/images/pattern.gif'), repeat;
+
+}
+
+
+
+
+
