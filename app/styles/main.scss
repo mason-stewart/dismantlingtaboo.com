@@ -27,6 +27,10 @@ p {
     // font-family: Adelle;
 }
 
+.tk-adelle, h1, h2, h3, h4, h5, h6 {
+    font-family: "adelle", serif;
+}
+
 h2 {
     font-size: 36px;
 }
@@ -78,6 +82,10 @@ header {
         line-height: 22px;
         margin-bottom: 23px;
         font-weight: 400;
+
+        span {
+            font-weight: bolder;
+        }
     }
 
     .divider {
@@ -148,7 +156,7 @@ header {
     .download-content {
 
         h2 {
-            font-size: 24px;
+            font-size: 23px;
             margin-top: 45px;
 
             @media only screen and (max-width: 959px) {
