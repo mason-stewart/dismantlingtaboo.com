@@ -18,9 +18,11 @@ body {
     text-align: center;
 }
 
+img {
+    vertical-align: top;
+}
+
 p {
-    width: 600px;
-    margin: 0 auto;
     text-align: center;
     // font-family: Adelle;
 }
@@ -29,20 +31,23 @@ h2 {
     font-size: 36px;
 }
 
+.columns {
+    // outline: 1px solid blue;
+}
+
 header {
-    height: 500px;
+    height: 520px;
     background: url('/images/pattern.gif'), repeat;
     border-bottom: 2px solid #000;
     // font-family: Adelle;
 
     .book-title {
-        display: block;
-        padding: 40px 0 35px;
-        margin: 0 auto;
+        max-height: 100%;    
+        max-width: 100%;
+        margin: 40px auto 15px;
     }
 
     .summary {
-        width: 640px;
         font-size: 20px;
         line-height: 32px;
         margin: 0 auto;
@@ -81,7 +86,6 @@ header {
     }
 
     .middle {
-        height: 290px;
         background: url('/images/pattern.gif'), repeat;
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
@@ -97,7 +101,6 @@ header {
     }
 
     .quote {
-        width: 588px;
         color: $light-text;
         font-style: italic;
         line-height: 22px;
@@ -108,6 +111,10 @@ header {
         margin-bottom: 45px;
     }
 
+    .praise {
+        margin-top: 60px;
+    }
+
     .quoted {
         font-weight: 400;
         font-size: 15px;
@@ -115,29 +122,38 @@ header {
 }
 
 .middle-content {
-    width: 775px;
-    height: inherit;
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
 
     * {
         text-align: left;
+
+        /* All Mobile Sizes (devices and browser) */
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     .book {
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        margin-top: -36px;
+
+        @media only screen and (max-width: 959px) {
+            margin-top: -23px;
+        }
+
+        img {
+            max-height: 100%;    
+            max-width: 100%;
+        }
     }
 
     .download-content {
-        width: 450px;
-        margin-left: 320px;
 
         h2 {
             font-size: 24px;
             margin-top: 45px;
+
+            @media only screen and (max-width: 959px) {
+                margin-top: 18px;
+            }
         }
 
         p {
@@ -154,16 +170,35 @@ header {
             display: inline-block;
             border-radius: 4px;
             background: $background;
+            display: inline-block;
+            text-decoration: none;
+
+            /* All Mobile Sizes (devices and browser) */
+            @media only screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
+
+            &:hover {
+                color: $background;
+                background: $red-text;
+            }
         }
     }
 }
 
 footer {
-    height: 58px;
+    padding: 20px;
+    padding-bottom: 0;
+    min-height: 58px;
     margin-top: 95px;
     border-top: 2px solid #000;
-    line-height: 58px;
+    line-height: 30px;
     background: url('/images/pattern.gif'), repeat;
+
+    p {
+        margin-bottom: 0;
+        padding-bottom: 16px;
+    }
 
 }
 
