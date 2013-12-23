@@ -317,7 +317,11 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'useminPrepare',
-        'concurrent:dist',
+        'compass',
+        'copy:styles',
+        // 'imagemin',
+        'svgmin',
+        'htmlmin',
         'autoprefixer',
         'concat',
         'cssmin',
